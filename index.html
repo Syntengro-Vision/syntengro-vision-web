@@ -21,18 +21,27 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.25rem 5%;
+            padding: 1rem 5%;
             background-color: #FFFFFF;
             border-bottom: 1px solid #E2E8F0;
             position: sticky;
             top: 0;
             z-index: 100;
         }
-        .logo {
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+        .logo-img {
+            height: 44px;
+            width: auto;
+        }
+        .logo-text {
             font-weight: 800;
             font-size: 1.25rem;
             color: #0F172A;
-            text-decoration: none;
             letter-spacing: -0.025em;
         }
         .nav-links {
@@ -302,7 +311,10 @@
 
     <!-- Navigation -->
     <nav>
-        <a href="#" class="logo">Syntengro Vision</a>
+        <a href="#" class="logo-container">
+            <img src="logo.png" alt="Syntengro Vision Logo" class="logo-img">
+            <span class="logo-text">Syntengro Vision</span>
+        </a>
         <div class="nav-links">
             <a href="#services">Services</a>
             <a href="#about">About</a>
@@ -367,7 +379,6 @@
                 <h3>Engineered for Precision.</h3>
                 <p>Founded by an enterprise Systems Administrator and certified cloud architect holding full Secret security clearance. Syntengro Vision brings rigorous, Fortune 500 infrastructure standards directly to growing organizations that cannot afford downtime.</p>
             </div>
-            <!-- Space reserved for operator profile picture -->
         </div>
     </section>
 
